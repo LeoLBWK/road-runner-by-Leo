@@ -1,8 +1,7 @@
 /**
  * Top-level build file for ftc_app project.
  *
- * It is extraordinarily rare that you will ever need to edit this file.
- */
+ * It is extraordinarily rare that you will ever need to edit this file.*/
 
 buildscript {
     repositories {
@@ -26,4 +25,10 @@ allprojects {
 
 repositories {
     mavenCentral()
+}
+
+repositories {
+    maven {
+        url 'https://maven.brott.dev/'
+    }
 }
