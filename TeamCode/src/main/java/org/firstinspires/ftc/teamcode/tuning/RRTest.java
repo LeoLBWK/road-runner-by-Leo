@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.tuning;
 
 import com.acmerobotics.roadrunner.Pose2d;
 import com.acmerobotics.roadrunner.Vector2d;
@@ -7,7 +7,6 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.MecanumDrive;
-import org.firstinspires.ftc.teamcode.tuning.TuningOpModes;
 
 @Autonomous(group = "Test")
 public class RRTest extends LinearOpMode {
@@ -26,6 +25,7 @@ public class RRTest extends LinearOpMode {
                     drive.actionBuilder(beginPose)
                             .splineTo(new Vector2d(30, 30), Math.PI / 2)
                             .splineTo(new Vector2d(0, 60), Math.PI)
-                            .build());
+                            .build()
+            );
     }
 }
